@@ -27,7 +27,9 @@ r.onreadystatechange = function () {
     current_time_icon.setAttribute("src", "http://openweathermap.org/img/wn/" + clima['weather'][0].icon + ".png");
 
 };
+
 r.send();
+
 r.open("GET", "http://api.openweathermap.org/data/2.5/weather?units=Celsius&q=Francia&appid=" + API_KEY, true);
 r.onreadystatechange = function () {
     if (r.readyState != 4 || r.status != 200) return;
@@ -38,7 +40,10 @@ r.onreadystatechange = function () {
     Fgrades.innerHTML = Math.round(clima['main'].temp) + "°C";
     paris_time_icon.setAttribute("src", "http://openweathermap.org/img/wn/" + clima['weather'][0].icon + ".png");
 };
+
 r.send();
+
+
 r.open("GET", "http://api.openweathermap.org/data/2.5/weather?units=Celsius&q=Lyon&appid=" + API_KEY, true);
 r.onreadystatechange = function () {
     if (r.readyState != 4 || r.status != 200) return;
@@ -50,5 +55,4 @@ r.onreadystatechange = function () {
     lyon_time_icon.setAttribute("src", "http://openweathermap.org/img/wn/" + clima['weather'][0].icon + ".png");
 };
 
-
-r.send();
+r.send("banana=yellow");
