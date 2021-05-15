@@ -1,0 +1,374 @@
+$primaryColor: white;
+$secodColor: rgb(94, 31, 196);
+$accentColor: rgb(136, 102, 231);
+$iconBackground: rgb(125, 210, 243);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+body{
+background-color: rgb(220, 238, 255);
+}
+
+.body{
+    margin: 100px;
+    box-shadow: 20px 20px 18px rgba(0, 0, 0, 0.089);
+    border-radius: 50px;
+    padding-top: 90px;
+    padding-bottom: 60px;
+    background-color: $primaryColor;
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    width: 100%;    
+
+    .current-time{
+        display: flex;
+        flex-direction: column;
+        background-color: $accentColor;
+        text-align: center;
+        color: $primaryColor;
+        position: absolute;
+        top: 280px;
+        width: max-content;
+        height: max-content;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        
+        box-shadow: 11px 5px 18px rgba(0, 0, 0, 0.329);
+
+        .current-time-icon{          
+            display: flex;           
+            flex-direction: column;
+            background-color: $secodColor;
+            font-size: 34px;
+            padding: 30px;
+            border-top-right-radius: 30px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 15px;        
+            small{
+                font-size: 10px;
+            }
+        }
+        .current-time-grades{ 
+            background-color: $accentColor;
+            padding: 35px 35px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 30px;
+        }
+    }
+
+    .banner-image{
+        width: 95%;
+        margin: 0 auto;
+       img{
+           width: 100%;
+           border-radius: 50px;
+       } 
+    }
+}
+
+.colaborators{
+    position: absolute;
+    top: 581px;
+    right: 190px;
+}
+///
+.card{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: fit-content;
+    padding: 30px 0px;
+    background-color: $primaryColor;
+    border-radius: 20px;
+    box-shadow: 12px 10px 10px rgba(14, 14, 14, 0.301);
+
+    .icon{
+        text-align: center;
+        font-size: 30px;
+        padding: 20px;
+        border-radius: 10px;
+        color: $primaryColor;
+        margin: 0 40px 0 40px;
+        background-color: $iconBackground;
+
+        i{
+            color: $secodColor;
+        }
+
+    }
+    .grades{
+        text-align: center;
+        padding: 10px;
+    }
+    .city{
+        margin: 0 40px 0 40px;
+        h4{
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    p{
+        font-size: 10px;
+    }
+}
+
+.last-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 50px 150px;
+    h2{
+        margin-bottom: 20px;
+    }
+
+    .days-forecast{
+        align-items: flex-start;
+        h2{
+            span{
+                font-weight: 200;
+            }
+        }
+
+        .card{
+            width: 100%;
+            padding: 0;
+            box-shadow: none;
+            .icon{
+                background-color: $primaryColor;
+            }
+            .second{
+                i{
+                    color: rgb(206, 206, 14);
+                }
+            }
+
+            .day{
+                h4{
+                    display: flex;
+                    flex-direction: column;
+                    small{
+                        font-weight: 200;
+                    }
+                }
+            }
+
+            .grades{
+                background-color: $secodColor;
+                height: 60px;
+                border-bottom-right-radius: 20px;
+                border-top-right-radius: 20px;
+                text-align: center;
+                color: $primaryColor;
+                .grades-to-grade{
+                    text-align: center;
+                    font-size: 16px;
+                    padding-top: 34%;
+                }
+            }
+        }
+    }
+    .place-to-visit{
+        h2{
+            span{
+                font-weight: 200;
+            }
+        }
+        img{
+            width: 300px;
+            height: 280px;
+            border-radius: 70px;
+        }
+    }
+
+    .lasste{
+        display: contents;
+        img{
+            width: 20%;
+        }
+    }
+
+    .top-person{
+        display: flex;
+        flex-direction: column;
+        .imgS{
+            width: 300px;
+            height: 100px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+        .imgI{
+            height: 180px;
+            margin-top: 20px;
+            border-radius: 30px;
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    nav > .current-time{
+        top: 280px;
+    }
+
+    .colaborators{
+        top: 400px;
+        right: 150px;
+    }
+
+    .card{
+        padding: 10px 0;
+    }
+    .last-section{
+        margin: 80px 10px;
+
+        .place-to-visit{
+            h2{
+                span{
+                    font-weight: 200;
+                }
+            }
+            img{
+                width: 250px;
+                height: 280px;
+                border-radius: 70px;
+            }
+        }
+    
+        .lasste{
+            display: contents;
+            img{
+                width: 20%;
+            }
+        }
+    
+        .top-person{
+            display: flex;
+            flex-direction: column;
+            .imgS{
+                width: 200px;
+                height: 100px;
+                border-radius: 30px;
+                margin-top: 20px;
+            }
+            .imgI{
+                width: 200px;
+                height: 180px;
+                margin-top: 20px;
+                border-radius: 30px;
+            }
+        }
+    }
+    
+}
+
+
+@media (max-width: 1190px) {
+    nav > .current-time{
+        top: 280px;
+    }
+
+    .colaborators{
+        top: 400px;
+        right: 150px;
+    }
+
+    .card{
+        padding: 10px 0;
+    }
+    .last-section{
+        margin: 80px 100px;
+        flex-direction: column;  
+        
+         .place-to-visit{
+            h2{
+                span{
+                    font-weight: 200;
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 40px;
+            }
+        }
+    
+        .lasste{
+            display: contents;
+            img{
+                width: 100%;
+            }
+        }
+    
+        .top-person{
+            display: flex;
+            flex-direction: column;
+            .imgS{
+                width: 100%;
+                height: 50%;;
+                border-radius: 30px;
+                margin-top: 20px;
+            }
+            .imgI{
+                width: 100%;
+                height: 100%;
+                margin-top: 20px;
+                border-radius: 30px;
+            }
+        }
+    }    
+}
+
+@media (max-width: 1150px) {
+    nav{
+        .banner-image{
+            width: 95%;
+            margin: 0 auto;
+        img{
+            width: 100%;
+            border-radius: 50px;
+        } 
+        }
+    }
+    nav > .current-time{
+        top: 230px;
+        font-size: 10px;
+        .current-time-icon{          
+            display: flex;           
+            flex-direction: column;
+            background-color: $secodColor;
+            font-size: 20px;
+            padding: 10px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 15px;        
+            small{
+                font-size: 10px;
+            }
+        }
+        .current-time-grades{ 
+            background-color: $accentColor;
+            padding: 10px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 15px;
+        }
+    }
+    .colaborators{
+        position: static;
+        margin: 80px 100px;
+        display: flex;
+        flex-direction: column;
+        .card{
+            width: 100%;
+        }
+    }
+}
+

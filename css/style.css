@@ -1,0 +1,435 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+body {
+  background-color: #dceeff;
+}
+
+.body {
+  margin: 100px;
+  -webkit-box-shadow: 20px 20px 18px rgba(0, 0, 0, 0.089);
+          box-shadow: 20px 20px 18px rgba(0, 0, 0, 0.089);
+  border-radius: 50px;
+  padding-top: 90px;
+  padding-bottom: 60px;
+  background-color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+nav .current-time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #8866e7;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 280px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  -webkit-box-shadow: 11px 5px 18px rgba(0, 0, 0, 0.329);
+          box-shadow: 11px 5px 18px rgba(0, 0, 0, 0.329);
+}
+
+nav .current-time .current-time-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #5e1fc4;
+  font-size: 34px;
+  padding: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 15px;
+}
+
+nav .current-time .current-time-icon small {
+  font-size: 10px;
+}
+
+nav .current-time .current-time-grades {
+  background-color: #8866e7;
+  padding: 35px 35px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 30px;
+}
+
+nav .banner-image {
+  width: 95%;
+  margin: 0 auto;
+}
+
+nav .banner-image img {
+  width: 100%;
+  border-radius: 50px;
+}
+
+.colaborators {
+  position: absolute;
+  top: 581px;
+  right: 190px;
+}
+
+.card {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 30px 0px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 12px 10px 10px rgba(14, 14, 14, 0.301);
+          box-shadow: 12px 10px 10px rgba(14, 14, 14, 0.301);
+}
+
+.card .icon {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  margin: 0 40px 0 40px;
+  background-color: #7dd2f3;
+}
+
+.card .icon i {
+  color: #5e1fc4;
+}
+
+.card .grades {
+  text-align: center;
+  padding: 10px;
+}
+
+.card .city {
+  margin: 0 40px 0 40px;
+}
+
+.card .city h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card p {
+  font-size: 10px;
+}
+
+.last-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 50px 150px;
+}
+
+.last-section h2 {
+  margin-bottom: 20px;
+}
+
+.last-section .days-forecast {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.last-section .days-forecast h2 span {
+  font-weight: 200;
+}
+
+.last-section .days-forecast .card {
+  width: 100%;
+  padding: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.last-section .days-forecast .card .icon {
+  background-color: white;
+}
+
+.last-section .days-forecast .card .second i {
+  color: #cece0e;
+}
+
+.last-section .days-forecast .card .day h4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.last-section .days-forecast .card .day h4 small {
+  font-weight: 200;
+}
+
+.last-section .days-forecast .card .grades {
+  background-color: #5e1fc4;
+  height: 60px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 20px;
+  text-align: center;
+  color: white;
+}
+
+.last-section .days-forecast .card .grades .grades-to-grade {
+  text-align: center;
+  font-size: 16px;
+  padding-top: 34%;
+}
+
+.last-section .place-to-visit h2 span {
+  font-weight: 200;
+}
+
+.last-section .place-to-visit img {
+  width: 300px;
+  height: 280px;
+  border-radius: 70px;
+}
+
+.last-section .lasste {
+  display: contents;
+}
+
+.last-section .lasste img {
+  width: 20%;
+}
+
+.last-section .top-person {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.last-section .top-person .imgS {
+  width: 300px;
+  height: 100px;
+  border-radius: 30px;
+  margin-top: 20px;
+}
+
+.last-section .top-person .imgI {
+  height: 180px;
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+@media (max-width: 1366px) {
+  nav > .current-time {
+    top: 280px;
+  }
+  .colaborators {
+    top: 400px;
+    right: 150px;
+  }
+  .card {
+    padding: 10px 0;
+  }
+  .last-section {
+    margin: 80px 10px;
+  }
+  .last-section .place-to-visit h2 span {
+    font-weight: 200;
+  }
+  .last-section .place-to-visit img {
+    width: 250px;
+    height: 280px;
+    border-radius: 70px;
+  }
+  .last-section .lasste {
+    display: contents;
+  }
+  .last-section .lasste img {
+    width: 20%;
+  }
+  .last-section .top-person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .last-section .top-person .imgS {
+    width: 200px;
+    height: 100px;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  .last-section .top-person .imgI {
+    width: 200px;
+    height: 180px;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 1190px) {
+  nav > .current-time {
+    top: 280px;
+  }
+  .colaborators {
+    top: 400px;
+    right: 150px;
+  }
+  .card {
+    padding: 10px 0;
+  }
+  .last-section {
+    margin: 80px 100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .last-section .place-to-visit h2 span {
+    font-weight: 200;
+  }
+  .last-section .place-to-visit img {
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+  }
+  .last-section .lasste {
+    display: contents;
+  }
+  .last-section .lasste img {
+    width: 100%;
+  }
+  .last-section .top-person {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .last-section .top-person .imgS {
+    width: 100%;
+    height: 50%;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+  .last-section .top-person .imgI {
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 30px;
+  }
+}
+
+@media (max-width: 1150px) {
+  nav .banner-image {
+    width: 95%;
+    margin: 0 auto;
+  }
+  nav .banner-image img {
+    width: 100%;
+    border-radius: 50px;
+  }
+  nav > .current-time {
+    top: 230px;
+    font-size: 10px;
+  }
+  nav > .current-time .current-time-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #5e1fc4;
+    font-size: 20px;
+    padding: 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 15px;
+  }
+  nav > .current-time .current-time-icon small {
+    font-size: 10px;
+  }
+  nav > .current-time .current-time-grades {
+    background-color: #8866e7;
+    padding: 10px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 15px;
+  }
+  .colaborators {
+    position: static;
+    margin: 80px 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .colaborators .card {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
