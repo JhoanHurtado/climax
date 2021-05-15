@@ -18,19 +18,18 @@ var lyon_time_icon = document.getElementById('lyon_time_icon');
 
 var r = new XMLHttpRequest();
 
-r.open("GET", "http://api.openweathermap.org/data/2.5/weather?units=Celsius&q=" + city + "&appid=" + API_KEY, true);
+r.open("GET", "https://api.openweathermap.org/data/2.5/weather?units=Celsius&q=" + city + "&appid=" + API_KEY, true);
 r.onreadystatechange = function () {
     if (r.readyState != 4 || r.status != 200) return;
     var clima = JSON.parse(r.responseText);
     current_main.innerHTML = clima['weather'][0].main;
     curret_grades.innerHTML = Math.round(clima['main'].temp) + "°C";
     current_time_icon.setAttribute("src", "http://openweathermap.org/img/wn/" + clima['weather'][0].icon + ".png");
-
 };
 
 r.send();
 var r2 = new XMLHttpRequest();
-r2.open("GET", "http://api.openweathermap.org/data/2.5/weather?units=Celsius&q=Francia&appid=" + API_KEY, true);
+r2.open("GET", "https://api.openweathermap.org/data/2.5/weather?units=Celsius&q=Francia&appid=" + API_KEY, true);
 r2.onreadystatechange = function () {
     if (r2.readyState != 4 || r2.status != 200) return;
     var clima = JSON.parse(r2.responseText);
@@ -44,7 +43,7 @@ r2.onreadystatechange = function () {
 r2.send();
 
 var r3 = new XMLHttpRequest();
-r3.open("GET", "http://api.openweathermap.org/data/2.5/weather?units=Celsius&q=Lyon&appid=" + API_KEY, true);
+r3.open("GET", "https://api.openweathermap.org/data/2.5/weather?units=Celsius&q=Lyon&appid=" + API_KEY, true);
 r3.onreadystatechange = function () {
     if (r3.readyState != 4 || r3.status != 200) return;
     var clima = JSON.parse(r3.responseText);
